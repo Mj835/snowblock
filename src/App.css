@@ -399,10 +399,10 @@ body {
 }
 
 .bhdahu {
-  background: rgb(68, 158, 252);
+  background: rgb(68, 154, 252);
   background: linear-gradient(
     180deg,
-    rgba(68, 158, 252, 1) 0%,
+    rgba(68, 154, 252, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
   flex-shrink: 0;
