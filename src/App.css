@@ -36,6 +36,11 @@ body {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Header CSS */
 .header {
   --common-transition: all 0.5s ease-in-out;
@@ -408,7 +413,7 @@ body {
   flex-shrink: 0;
   margin-top: 80px;
   padding-bottom: 25px;
-  padding-top: 95px;
+  padding-top: 50px;
   width: 100%;
   color: white;
   text-align: center;
@@ -419,5 +424,58 @@ body {
     margin: auto;
     max-width: fit-content;
     padding-left: 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rightDesign {
+    right: -35px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    display: none !important;
+  }
+
+  .whatWeDo {
+    flex-direction: column;
+  }
+
+  .teamWrap {
+    padding-left: 0px;
+  }
+
+  .teamMembers {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .whySecDiv h1,
+  .home h1 {
+    font-size: 4rem;
+  }
+
+  .pWrap p {
+    width: auto;
+  }
+
+  .whatWeDoSec {
+    padding: 0px;
+  }
+
+  .teamBox {
+    padding: 10px;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .rightDesign {
+    right: -15px;
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/SnowBlock.png";
 import { Link } from "react-scroll";
+import { FaDiscord, FaTwitter } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -21,7 +22,13 @@ const Header = () => {
         <h1 style={{ marginLeft: 5 }}>SnowBlock</h1>
       </Link>
 
-      <nav>
+      <nav
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <span>
           <Link
             style={{
@@ -62,17 +69,12 @@ const Header = () => {
           </Link>
         </span>
         <span>
-          <Link
-            style={{
-              cursor: "pointer",
-            }}
-            to="contact-us"
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            Contact Us
-          </Link>
+          <a href="#">
+            <FaDiscord size={25} />
+          </a>
+          <a href="#">
+            <FaTwitter size={25} style={{ marginLeft: 25 }} />
+          </a>
         </span>
       </nav>
     </div>
